@@ -1,0 +1,30 @@
+emu.message(string msg)
+
+emu.softreset()
+
+emu.speedmode(string mode)
+
+emu.frameadvance()
+
+emu.exec_count(int count, function func)
+
+emu.setreadonly(bool state)
+
+emu.loadrom(string filename)
+
+emu.print(string str)
+
+JoyPad liB::
+
+table joypad.get(int player)
+
+table of: up, down, left, right, A, B, start, select
+table joypad.getimmediate(int player)
+table joypad.readimmediate(int player)
+
+table joypad.getdown(int player)
+table joypad.readdown(int player)
+joypad.set(int player, table input)
+
+four values: true, false, nil, invert
+
